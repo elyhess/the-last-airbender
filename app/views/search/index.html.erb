@@ -5,8 +5,8 @@
   <% if character.has_image? %>
     <%= image_tag character.image %>
   <% end %>
-  <p>Allies: <%= character.allies %></p>
-  <p>Enemies: <%= character.enemies %></p>
+  <p>Allies: <%= character.display_allies %></p>
+  <p>Enemies: <%= character.display_enemies %></p>
   <p>Affiliation: <%= character.affiliation %></p>
   <br>
 <% end %>
