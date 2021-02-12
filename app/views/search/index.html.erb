@@ -5,8 +5,8 @@
   <% if character[:photoUrl] %>
     <%= image_tag character[:photoUrl] %>
   <% end %>
-  <p>Allies: <%= character[:allies] %></p>
-  <p>Enemies: <%= character[:enemies] %></p>
+  <p>Allies: <%= character[:allies].join(", ") %></p>
+  <p>Enemies: <%= character[:enemies].join(", ") %></p>
   <p>Affiliation: <%= character[:affiliation] %></p>
   <br>
 <% end %>
