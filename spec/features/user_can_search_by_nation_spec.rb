@@ -12,7 +12,8 @@ RSpec.describe "As a visitor" do
 
 			expect(current_path).to eq(search_path)
 
-			expect(page).to have_content("Displaying 25 results")
+			expect(page).to have_content("Total Shown: 25")
+			expect(page).to have_content("Total Characters: 97")
 			expect(page).to have_content("Name: Afiko")
 			expect(page).to have_content("Allies: Fire Nation")
 			expect(page).to have_content("Enemies: Aang")

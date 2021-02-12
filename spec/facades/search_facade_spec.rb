@@ -6,7 +6,7 @@ describe SearchFacade do
 			search = SearchFacade.characters_by_nation("fire+nation")
 			expect(search).to be_a(Array)
 			expect(search.first).to be_a(Character)
-			expect(search.count).to eq(25)
+			expect(search.count).to eq(97)
 		end
 	end
 end

@@ -1,7 +1,7 @@
 class AvatarService
 	class << self
 		def get_results(search)
-			response = conn.get("/api/v1/characters?affiliation=#{search}&perPage=25")
+			response = conn.get("/api/v1/characters?affiliation=#{search}&perPage=100")
 			parse(response)
 		end
 
