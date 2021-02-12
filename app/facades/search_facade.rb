@@ -6,8 +6,8 @@ class SearchFacade
 		end
 
 		private
-		def create_characters(characters)
-			characters.map do |character|
+		def create_characters(character_data)
+			character_data.map do |character|
 				Character.new(character)
 			end
 		end

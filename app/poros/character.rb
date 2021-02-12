@@ -1,6 +1,6 @@
 class Character
 	attr_reader :name,
-	            :photo,
+	            :image,
 	            :allies,
 	            :enemies,
 	            :affiliation
@@ -12,4 +12,9 @@ class Character
 		@enemies = data[:enemies].join(", ")
 		@affiliation = data[:affiliation]
 	end
+
+	def has_image?
+		@image != nil
+	end
+
 end

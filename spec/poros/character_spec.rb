@@ -25,4 +25,15 @@ RSpec.describe Character do
 		expect(character.enemies).to eq("ene1, ene2")
 		expect(character.affiliation).to eq("some affiliation")
 	end
+
+	it 'has image' do
+		character = Character.new({
+			                          name:        "some_name",
+			                          allies:      ["ali1", "ali2"],
+			                          enemies:     ["ene1", "ene2"],
+			                          affiliation: 'some affiliation'
+		                          })
+
+		expect(character.has_image?).to eq(false)
+	end
 end
