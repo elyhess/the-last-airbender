@@ -1,8 +1,6 @@
 class Character
 	attr_reader :name,
 	            :image,
-	            :allies,
-	            :enemies,
 	            :affiliation
 
 	def initialize(data)
